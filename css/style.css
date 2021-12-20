@@ -63,13 +63,6 @@ p, label, strong {
 .badge.adventure {
     background-color: #40ABF5;
 }
-.badge.tournaments {
-    background-color: #fB6E10;
-}
-.badge.premium-tournament {
-    background-color: #FFB320;
-    color: #252525;
-}
 .shade {
     position: absolute;
     z-index: 1;
@@ -126,7 +119,7 @@ nav ul li a:hover {
 /*end of header style rules*/
 /*start: hero styles*/
 #hero-image {
-    background: url("../images/as.png") top center no-repeat;
+    background: url("../images/programming_01.png") top center no-repeat;
     height: 820px;
 }
 
@@ -202,6 +195,20 @@ nav ul li a:hover {
 }
  /*end: latest news styles*/
  
+/* start academic qualifications */
+.box-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-headings h1 {
+    text-align: center;
+}
+
+
+/* end academic qualifications */
+
+
  /*start: game type styles*/
 #game-types-boxes {
     margin-bottom: 75px;
@@ -212,19 +219,19 @@ nav ul li a:hover {
     height: 380px;
 }
 #game-types-boxes .box.new {
-    background: url("../images/groot.jpg") top center no-repeat;
+    background: url("../images/siddhi.jpg") top center no-repeat;
     background-size: cover;
 }
 #game-types-boxes .box.strategy {
-    background: url("../images/background-batman.jpg") top center no-repeat;
+    background: url("../images/aroma.png") top center no-repeat;
     background-size: cover;
 }
 #game-types-boxes .box.rpg {
-    background: url("../images/background-fortnite.jpg") top center no-repeat;
+    background: url("../images/ismt_01.jpg") top center no-repeat;
     background-size: cover;
 }
 #game-types-boxes .box.racing {
-    background: url("../images/racing.jpg") top center no-repeat;
+    background: url("../images/softwarica_01.jpg") top center no-repeat;
     background-size: cover;
 }
 
@@ -286,108 +293,7 @@ nav ul li a:hover {
     font-size: 0.8em;
 }
  /*end:recent game styles*/
- /*start:tournament styles*/
- #tournaments {
-     background: url("../images/background_pattern.png") 0 0 repeat;
-     padding: 125px 0 105px;
- }
- #tournaments .flex {
-     position: relative;
- }
- #tournaments .badge {
-     position: absolute;
-     top: 0;
-     left: 0;
-     z-index: 2;
- }
- #tournaments .badge.tournaments {
-     top: -32px;
-     left: 15px;
- }
-
- #tournaments .box {
-     background-color: #252525;
-     padding: 70px 20px 40px;
-     flex-basis: 45%;
-     position: relative;
- }
- #tournaments .box .tournament-image {
-     float: left;
-     width: 30%;
- }
- #tournaments .box .tournament-image img {
-    width: 100%;
-}
-#tournaments .box .tournament-content {
-    float: left;
-    margin-left: 25px;
-    width: 60%;
-}
-#tournaments .box .tournament-content h3 {
-color: #FFB320;
-margin-top: 0;
-}
-#tournaments .box .tournament-content label {
-    color: #999;
-    font-size: 0.75em;
-}
-#tournaments .box .tournament-content label.prizes {
-    color: #FFB320;
-    display: inline-block; 
-    margin-top: 12px;   
-}
-#tournaments .box .tournament-content strong {
-    color: #eee;
-    font-size: 0.75em;
-}
- /*end:tournament styles*/
- /*start: recent review styles*/
-#recent-reviews {
-    background: url("../images/recent_reviews\ background.jpg") top right no-repeat;
-    background-size: cover;
-    padding: 75px 0 50px;
-}
-#recent-reviews h1 {
-    text-align: center;
-    margin-bottom: 1.65em;
-}
-
-#recent-reviews .box {
-    flex-basis: 23%;
-    position: relative;
-    text-align: center;
-}
-#recent-reviews .box .rating-badge {
-    border-radius: 28px;
-    padding: 13px;
-    font-size: 1.1.em;
-    color: #eee;
-    font-weight: 600;
-    background-color: #FFB320;
-    position: absolute;
-    top: -30px;
-    left: 30px;
-}
-#recent-reviews .box .rating-badge.purple {
-    background-color: #694EAE;
-}
-#recent-reviews .box .rating-badge.green {
-    background-color: #4EAE60;
-}
-#recent-reviews .box .rating-badge.violet {
-    background-color: #FF20AE;
-}
-#recent-reviews .box .recent-reviews-image {
-    margin-bottom: 0.75em;
-    overflow: hidden;
-}
-#recent-reviews .box .recent-reviews-image img{
-    width: 100%;
-}
-#recent-reviews .box p {
-    color: #999;
-}
- /*end:recent review styles*/
+ 
  /*start: post/comment styles*/
 #posts-comments {
     background: url("../images/footer_bg_pattern.png") 0 0 repeat;
@@ -396,6 +302,12 @@ margin-top: 0;
 #posts-comments .game-warrior {
     flex-basis: 32%;
     position: relative;
+}
+
+#posts-comments .game-warrior  h1{
+    color: #eee;
+    font-weight: 1600;
+    font-style: italic;
 }
 
 #posts-comments .game-warrior p {
@@ -450,6 +362,7 @@ margin-top: 0;
     font-size: 0.8em;
 }
 .post-item > div small {
+    text-align: center;
     color: #999;
     font-size: 0.75em;
 }
@@ -497,6 +410,9 @@ footer {
     background-color: #252525;
     padding: 25px 0 20px;
 }
+.footer-msg {
+    text-align: center;
+}
 footer small {
     color: #ddd;
     font-size: 0.9em;
@@ -528,13 +444,6 @@ footer ul li a {
      .latest-news-item {
          font-size: 0.8em;
      }
-     #tournaments .box .tournament-content {
-         margin-left: 15px;
-     }
-     #tournaments .box .tournament-content h3 {
-         font-size: 1.4em;
-         margin-bottom: 0.2em;
-     }
  }
  @media (max-width: 991px) {
      .flex {
@@ -553,30 +462,6 @@ footer ul li a {
      #game-types-boxes .box {
          flex-basis: 50%;
      }
-     #tournaments .box {
-         flex-basis: 42%;
-     }
-     #tournaments .box .tournament-image {
-         float: none;
-         width: 100%;
-         margin-bottom: 10px;
-         height: 250px;
-         overflow: hidden;
-     }
-     #tournaments .box .tournament-content {
-         margin-left: 0;
-         width: 100%;
-     }
-     #recent-reviews {
-         background: none;
-     }
-     #recent-reviews .flex{
-        flex-wrap: wrap;
-    }
-    #recent-reviews .box{
-        flex-basis: 48%;
-        margin-bottom: 45px;
-    }
     #posts-comments .flex {
         flex-wrap: wrap;
     }
@@ -593,6 +478,7 @@ footer ul li a {
     footer .flex {
         flex-wrap: wrap-reverse;
     }
+
     footer small {
         flex-basis: 100%;
         font-size: 0.75em;
@@ -662,22 +548,8 @@ footer ul li a {
          flex-basis: 100%;
          margin-bottom: 30px;
      }
-     #recent-games .flex, 
-     #tournaments .flex {
+     #recent-games .flex {
          flex-wrap: wrap;
-     }
-     #tournaments .box {
-         flex-basis: 100%;
-         margin-bottom: 20px;
-     }
-     #tournaments .box .tournament-image {
-         height: 400px;
-     }
-     #recent-reviews .box {
-         flex-basis: 100%;
-     }
-     #recent-reviews .box .recent-reviews-image {
-         height: 400px;
      }
      #posts-comments .posts-comments-box {
          flex-basis: 100%;
@@ -688,13 +560,6 @@ footer ul li a {
      }
      footer ul li a {
          font-size: 0.7em;
-     }
- }
-
- @media (max-width:400px) {
-
-     #tournaments .box .tournament-image{
-         height: 220px;
      }
  }
  /*end: media queries*/
