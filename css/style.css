@@ -210,39 +210,39 @@ nav ul li a:hover {
 
 
  /*start: game type styles*/
-#game-types-boxes {
+#education-boxes {
     margin-bottom: 75px;
 }
-#game-types-boxes .box {
+#education-boxes .box {
     flex-basis: 25%;
     position: relative;
     height: 380px;
 }
-#game-types-boxes .box.new {
+#education-boxes .box.new {
     background: url("../images/siddhi.jpg") top center no-repeat;
     background-size: cover;
 }
-#game-types-boxes .box.strategy {
+#education-boxes .box.strategy {
     background: url("../images/aroma.png") top center no-repeat;
     background-size: cover;
 }
-#game-types-boxes .box.rpg {
+#education-boxes .box.rpg {
     background: url("../images/ismt_01.jpg") top center no-repeat;
     background-size: cover;
 }
-#game-types-boxes .box.racing {
+#education-boxes .box.racing {
     background: url("../images/softwarica_01.jpg") top center no-repeat;
     background-size: cover;
 }
 
-#game-types-boxes .box .badge{
+#education-boxes .box .badge{
     position: relative;
     z-index: 2;
     top: 20px;
     left: 20px;
 
 }
-#game-types-boxes .box .contents {
+#education-boxes .box .contents {
     position: absolute;
     z-index: 2;
     bottom: 20px;
@@ -250,7 +250,7 @@ nav ul li a:hover {
     color: #eee;
     padding: 0 35px 0 25px;
 }
-#game-types-boxes .box .contents a {
+#education-boxes .box .contents a {
     font-size: 0.8em;
     font-weight: 300;
     color: #999;
@@ -258,37 +258,37 @@ nav ul li a:hover {
  /*end: game type styles*/
  
  /*start: recent game styles*/
- #recent_games {
-     background: url("../images/recent_games_bg.png") top center no-repeat;
+ #recent_projects {
+     background: url("../images/recent_projects_bg.png") top center no-repeat;
      background-color: #eef2f6;
      border-top: 1px solid #d6dee7;
      border-bottom: 1px solid #d6dee7;
      padding: 70px 0 120px;
  }
- #recent_games h1 {
+ #recent_projects h1 {
     text-align: center;    
  }
- #recent_games .box {
+ #recent_projects .box {
     position: relative;
     flex-basis: 31%;
     background-color: #fff;
 }
-#recent_games .box .badge {
+#recent_projects .box .badge {
     position: absolute;
     top: 20px;
     left: 20px;
     z-index: 2;
 }
-#recent_games .box img {
+#recent_projects .box img {
     width: 100%;
 }
-#recent_games .box .box-lower-section {
+#recent_projects .box .box-lower-section {
     padding: 20px;
 }
-#recent_games .box .box-lower-section p {
+#recent_projects .box .box-lower-section p {
     color: #999;
 }
-#recent_games .box .box-lower-section a {
+#recent_projects .box .box-lower-section a {
     color: #999;
     font-size: 0.8em;
 }
@@ -320,7 +320,8 @@ nav ul li a:hover {
 #posts-comments .game-warrior img.footer-graphic {
     position: absolute;
     margin-bottom: 0;
-    widows: 115%;
+    max-width: 40vh;
+    /* widows: 115%; */
 }
 #posts-comments .posts-comments-box {
     flex-basis: 28%;
@@ -333,6 +334,8 @@ nav ul li a:hover {
 }
 .post-item {
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
 }
 .post-item:first-child {
     margin-top: 0;
@@ -344,17 +347,18 @@ nav ul li a:hover {
 }
 .post-item img {
     float: left;
-    width: 30%;
+    width: 20%;
 }
 .post-item > div {
     float: left;
     margin-left: 5%;
-    width: 65%;   
+    width: 65%;
+    margin-top: 3vh;   
 }
-.post-item > div h5 {
+.post-item > div a {
     color: #FFB320;
     font-size: 0.8em;
-    margin-top: 0;
+    margin-top: 0vh;
 }
 .post-item > div p {
     color: #eee;
@@ -456,10 +460,10 @@ footer ul li a {
      #latest-news .flex h5 {
          width: 15%;
      }
-     #game-types-boxes .flex {
+     #education-boxes .flex {
          flex-wrap: wrap;
      }
-     #game-types-boxes .box {
+     #education-boxes .box {
          flex-basis: 50%;
      }
     #posts-comments .flex {
@@ -543,7 +547,7 @@ footer ul li a {
      #recent-games {
          padding: 60px 0;
      }
-     #game-types-boxes .box,
+     #education-boxes .box,
      #recent-games .box {
          flex-basis: 100%;
          margin-bottom: 30px;
